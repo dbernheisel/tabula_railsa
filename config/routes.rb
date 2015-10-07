@@ -1,13 +1,12 @@
 Rails.application.routes.draw do
-  get 'answers/show'
+  root 'answers#new'
+  resources :answers
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  root 'home#new'
-  get 'home/new'
-  post 'home/create'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
